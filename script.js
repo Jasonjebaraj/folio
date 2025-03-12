@@ -68,3 +68,35 @@ function openmenu()
   sidebar.style.right="0px";
   bar.style.visibility="hidden";
 }
+
+
+
+// skill
+
+var skill_content1=document.getElementById('skill_content1');
+        var skill_content2=document.getElementById('skill_content2');
+        var skill_content3=document.getElementById('skill_content3');
+        function frontend()
+        {
+            skill_content1.style.display="block";
+            skill_content1.style.display="flex";
+            skill_content2.style.display="none";
+            skill_content3.style.display="none";
+        }
+
+        function backend()
+        {
+            skill_content1.style.display="none";
+            skill_content2.style.display="block";
+            skill_content2.style.display="flex";
+            skill_content3.style.display="none";
+        }
+
+        function others()
+        {
+            skill_content1.style.display="none";
+            skill_content2.style.display="none";
+            skill_content3.style.display="block";
+            skill_content3.style.display="flex";
+            
+        }
