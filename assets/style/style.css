@@ -26,6 +26,7 @@ body{
     background-position: top;
     background-repeat: no-repeat;
     scroll-snap-align: start;
+    scroll-margin-top: 75px;
 }
 .header_dv{
     /* background-color: rgb(81, 42, 165); */
@@ -41,8 +42,9 @@ nav{
     position: sticky;
     top: 0px;
     z-index: 5;
-    
+    padding: 0px 10%;
 }
+
 nav li{
     display: inline-block;
     color: white;
@@ -150,6 +152,7 @@ nav a:hover::after{
     background-position: top;
     background-repeat: no-repeat;
     scroll-snap-align: start; 
+    scroll-margin-top: 75px;
     
    /* scroll-margin-top: 30px; */
 }
@@ -188,7 +191,7 @@ nav a:hover::after{
 .skills{
     width: 100%;
     height: 100vh;
-
+    scroll-margin-top: 75px;
     scroll-snap-align: start;
 }
 .skill_para{
@@ -319,11 +322,14 @@ nav a:hover::after{
 .skill_content{
     display: flex;
     justify-content: space-evenly;
-    border: #5d5df0 solid 2px;
+    /* border: #5d5df0 solid 2px; */
     border-radius: 8px;
     margin: 15px;
     padding: 12px;
     font-weight: 500;
+}
+.summa{
+    background-color: #4343CB;
 }
 .skill_content p{
     font-size: 20px;
@@ -339,12 +345,12 @@ nav a:hover::after{
     display: none;
 }
 .skill_buttonz{
-    color: black;
-    border:none;
-    background-color: white;
+    color: rgb(255, 255, 255);
+    /* border:none; */
+    background-color: rgb(0, 0, 0);
     border-radius: 50px;
     padding: 10px 15px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; */
 
 }
 
@@ -352,13 +358,13 @@ nav a:hover::after{
 .education{
     width: 100%;
     height: 100vh;
-
+    scroll-margin-top: 75px;
     scroll-snap-align: start;
 }
 
 .eud_txt{
    
-    margin-top: 80px;
+    margin-top: 50px;
 }
 .stick{
     height: 235px;
@@ -447,7 +453,7 @@ nav a:hover::after{
 .projects{
     width: 100%;
     height: 100vh;
-
+    scroll-margin-top: 75px;
     scroll-snap-align: start; 
 }
 .project_img{
@@ -515,6 +521,7 @@ nav a:hover::after{
     width: 100%;
     height: 100vh;
     scroll-snap-align: start; 
+    scroll-margin-top: 75px;
 }
 
 .contact_details{
@@ -705,6 +712,13 @@ textarea{
 
 @media only screen and (max-width:768px)
 {
+
+    /* .nav1{
+        display: none;
+    }
+    .nav2{
+        display: block;
+    } */
       /* header */
 
     .header{
@@ -716,7 +730,7 @@ textarea{
         padding: 0%;
     }
     nav{
-        background-color: transparent;
+        background-color: black;
     }
     #sidebar{
         right: -200px;
@@ -739,6 +753,7 @@ textarea{
         left: 10px;
     }
     #bars{
+        margin-top: 10px;
         display: block;
         font-size: 30px;
         position: fixed;
@@ -836,7 +851,7 @@ textarea{
 /* skill */
 
 .skills{
-    padding-bottom: 40px;
+    padding-bottom: 100px;
 }
 
 
@@ -875,6 +890,9 @@ textarea{
   footer{
     margin-top: 50px;
   }
+  .quick-links {
+    font-size: 14px;
+}
 }
 
 
@@ -948,3 +966,16 @@ textarea{
         height: auto;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -86,6 +86,7 @@ var skill_content1=document.getElementById('skill_content1');
 
         function backend()
         {
+            // skill_content2.classList.add('summa')
             skill_content1.style.display="none";
             skill_content2.style.display="block";
             skill_content2.style.display="flex";

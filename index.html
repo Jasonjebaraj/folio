@@ -11,16 +11,14 @@
     
   </head>
   <body>
-   
-    <div class="header">
-        <div class="header_dv">
-            <nav>
-                <div>
-                    <p id="logo">Jason</p>
+
+    <nav >
+                <div style="margin-top: 10px;">
+                    <p id="logo"><a href="#header_text">Jason</a></p>
                 </div>
                 <div>
                     <ul id="sidebar">
-                        <li><a href="#logo" >Home</a></li>
+                        <li><a href="#header_text" >Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skill">Skills</a></li>
                         <li><a href="#Qualification">Qualification</a></li>
@@ -32,7 +30,29 @@
                 </div>
 
             </nav>
-            <div class="header_text">
+   
+    <div class="header">
+        <div class="header_dv">
+          <!-- <nav class="nav2">
+                <div style="margin-top: 10px;">
+                    <p id="logo"><a href="#header_text">Jason</a></p>
+                </div>
+                <div>
+                    <ul id="sidebar">
+                        <li><a href="#header_text" >Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#Qualification">Qualification</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact-me</a></li>
+                        <i class="fa-solid fa-xmark " id="x" onclick="closemenu()"></i>
+                      </ul>
+                      <i class="fa-solid fa-bars" id="bars"  onclick="openmenu()" ></i>
+                </div>
+
+            </nav> -->
+            
+            <div class="header_text" id="header_text">
                 <p>Front-end Developer</p>
                 <h1>Hi,I'm <span class="my_name" ><br class="header_br">Jason Jebaraj</span></h1>
                 <p style="font-size: 20px; text-align: justify;">passionate frontend developer dedicated to crafting sleek, responsive, and user-friendly websites. With expertise in modern web technologies, I transform concepts into interactive digital experiences. Let’s collaborate and build something extraordinary!</p>
@@ -41,10 +61,10 @@
                 <a href="./assets/jasonresume.pdf" download=""><button class="head_button1">Download CV</button></a>
 
                 <div class="social_media mt-3">
-                    <p><a href=""><i class="fa-brands fa-linkedin"></i></a></p>
-                    <p><a href=""><i class="fa-brands fa-github"></i></a></p>
-                    <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
-                    <p><a href=""><i class="fa-brands fa-facebook"></i></a></p>
+                    <p><a href="https://www.linkedin.com/in/jason-jebaraj-990a31336/" target="blank"><i class="fa-brands fa-linkedin"></i></a></p>
+                    <p><a href="https://github.com/Jasonjebaraj" target="blank"><i class="fa-brands fa-github"></i></a></p>
+                    <p><a href="https://www.instagram.com/" target="blank"><i class="fa-brands fa-instagram"></i></a></p>
+                    <p><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook"></i></a></p>
                 </div>
             </div>
         </div>
@@ -69,6 +89,7 @@
                         I thrive in environments that challenge me to learn and adapt to new technologies and industry best practices. My problem-solving mindset and curiosity drive me to continuously improve my skills and explore innovative approaches to development. Beyond coding, I have a keen interest in design, optimization, and user experience, ensuring that every project I work on is both aesthetically pleasing and highly functional. I'm always eager to take on new challenges and collaborate with like-minded professionals to build cutting-edge digital experiences.</p>
                    
                         <div class="d-flex">
+                          <a href="#contact">
                             <div class="about_experience mt-4">
                             <div class="">
                               <h5 class="score">08.30+</h5>
@@ -86,8 +107,9 @@
                             </div>
         
                            
-                          </div>
+                          </div> </a>
                           <i class="fa-solid fa-arrow-left ex_arrow mt-3"></i>
+                       
                         </div>
                 </div>
               
@@ -134,7 +156,7 @@
             <div class="col-lg-6 col-md-12 col-sm-12">
               <h1>Skills & Experience</h1>
               <p class=" mt-3" style=" text-align: justify;">I am a passionate and detail-oriented frontend developer with expertise in building interactive, user-friendly, and responsive web applications. My technical skills span both frontend and backend technologies, enabling me to develop full-stack applications efficiently. On the frontend, I specialize in **HTML, CSS, JavaScript, Bootstrap, and React**, creating visually appealing and highly functional web interfaces. On the backend, I have experience with **Python, SQL, PHP, and Node.js**, managing server-side logic, databases, and APIs to ensure seamless functionality. Additionally, I am proficient in **GitHub** for version control and collaboration, as well as **Photoshop** for UI/UX design and creative enhancements. I continuously strive to refine my skills, stay updated with industry trends, and develop clean, efficient, and scalable solutions to enhance digital experiences.</p>
-              <p class="">Visit my <a href="">Linkedin</a> profile for more details or just <a href="">contact</a> me</p>
+              <p class="">Visit my <a href="https://www.linkedin.com/in/jason-jebaraj-990a31336/" target="blank">Linkedin</a> profile for more details or just <a href="#project">contact</a> me</p>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
              
@@ -609,7 +631,7 @@
       
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <form name="submit-to-google-sheet">
+            <form name="submit-to-google-sheet" id="intouch">
             
               <div>
                 <input type="text" name="Name" placeholder="Name" class="mb-5" required>
@@ -624,7 +646,7 @@
               </div>
     
               <div>
-                <button class="contact_button mt-4">Send Message  &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
+                <button class="contact_button mt-4"  >Send Message  &nbsp;<i class="fa-solid fa-arrow-right"></i></button>
               </div>
         
             </form>
@@ -644,7 +666,7 @@
 
 
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
           <div class="footer-content">
               <!-- Column 1: About -->
@@ -652,31 +674,31 @@
                   <h3>Jason Jebaraj</h3>
                   <p>Front-end developer passionate about crafting sleek, responsive, and user-friendly websites with expertise in modern web technologies.</p>
                   <div class="social-icons">
-                      <a href="#">
+                      <a href="https://www.linkedin.com/in/jason-jebaraj-990a31336/" target="blank">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                       </a>
-                      <a href="#">
+                      <a href="https://github.com/Jasonjebaraj" target="blank">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                       </a>
-                      <a href="#">
+                      <a href="https://www.instagram.com/" target="blank">
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                       </a>
-                      <a href="#">
+                      <a href="https://www.facebook.com/" target="blank" >
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
                       </a>
                   </div>
               </div>
               
               <!-- Column 2: Quick Links -->
-              <div class="footer-column">
+              <div class="footer-column" >
                   <h3>Quick Links</h3>
                   <ul class="quick-links">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">About</a></li>
-                      <li><a href="#">Skills</a></li>
-                      <li><a href="#">Qualification</a></li>
-                      <li><a href="#">Projects</a></li>
-                      <li><a href="#">Contact</a></li>
+                      <li><a href="#header_text">Home</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#skill">Skills</a></li>
+                      <li><a href="#Qualification">Qualification</a></li>
+                      <li><a href="#project">Projects</a></li>
+                      <li><a href="#contact">Contact</a></li>
                   </ul>
               </div>
               
@@ -695,7 +717,7 @@
                               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                               <polyline points="22,6 12,13 2,6"></polyline>
                           </svg>
-                          <span>jasonjebaraj136@gmail.com</span>
+                          <span><a href="mailto:jasonjebaraj136@gmail.com" style="color: #999;">jasonjebaraj136@gmail.com</a></span>
                       </li>
                       <li>
                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
